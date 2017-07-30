@@ -1,7 +1,49 @@
-$grey: #eee;
+$back: #fff;
+$basic: #43A047;
+$el: 300px;
 
 body {
-    margin: 0;
-    overflow: hidden;
-    background: $grey;
+  font: normal 14px sans-serif;
+  color: grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;;
+  height: 100%;
+  position: absolute;
+  justify-content: space-between;
+  margin: 0;
+}
+body > * {
+  flex: 1 1;
+}
+h2 {
+  margin: auto;
+}
+#start {
+  color: black
+}
+#end {
+  color: $basic;
+}
+#c {
+  order: 4;
+}
+
+#desc {
+  text-align: center;
+  display: flex;
+}
+
+#data, #menu {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  div, button {
+    margin: auto;
+  }
+  div {
+    flex-basis: 50%;
+    text-align: center;
+  }
 }

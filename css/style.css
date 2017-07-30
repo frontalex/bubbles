@@ -1,5 +1,40 @@
 body {
-  margin: 0;
-  overflow: hidden;
-  background: #eee;
-}
+  font: normal 14px sans-serif;
+  color: grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  position: absolute;
+  justify-content: space-between;
+  margin: 0; }
+
+body > * {
+  flex: 1 1; }
+
+#desk > h2 {
+  margin: 0; }
+
+#start {
+  color: black; }
+
+#end {
+  color: #43A047; }
+
+#c {
+  order: 4; }
+
+#desc {
+  text-align: center;
+  display: flex; }
+
+#data, #menu {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; }
+  #data div, #data button, #menu div, #menu button {
+    margin: auto; }
+  #data div, #menu div {
+    flex-basis: 50%;
+    text-align: center; }
