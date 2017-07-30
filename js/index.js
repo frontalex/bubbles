@@ -13,7 +13,7 @@ ar2=[]//отсортированый массив
 var colors = {
   black: '#000',
   red: '#E53935',
-  green: '#43A047'
+  green: '#fff'
 }
 
 function resize() {
@@ -44,9 +44,10 @@ function drawRects () {
   for(var i=0; i<count; i++) {
     var rect = arr[i];
     ctx.fillStyle = rect.col;
-    ctx.fillRect(i*w+2, c.height - rect.h , w-1, rect.h);
+    ctx.fillRect(i*w, c.height - rect.h , w-1, rect.h);
+    ctx.font= '14px Arial'
     ctx.fillText(rect.h, i*w+w/2, c.height - rect.h-3)
-    ctx.font= 'normal bold 14px Arial'
+    
     ctx.textAlign = "center"
   }
 }
