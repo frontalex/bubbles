@@ -12,6 +12,11 @@ body {
 body > * {
   flex: 1 1; }
 
+
+  button {
+    width: 33%;
+    height: 33%;
+  }
 .wrapper {
   background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
   position: absolute;
@@ -39,7 +44,9 @@ body > * {
   flex-wrap: wrap;
   width: 100%; }
   #data div, #data button, #menu div, #menu button {
-    margin: auto; }
+    margin: auto; 
+    
+  }
   #data div, #menu div {
     flex-basis: 50%;
     text-align: center; }
